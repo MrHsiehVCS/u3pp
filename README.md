@@ -27,6 +27,7 @@ For **Part B** you are going to use your newly made `Deck` to create a basic ver
 ### Simplified Blackjack Gameplay
 
 Skip to the TLDR if you already know how blackjack works.
+
 ### Full Explanation
 
 The goal of the game is to get as close as possible to 21 points without going over. `[2-10]` are worth their face value as points, `[Jack, Queen, King]` are worth 10 points. In our simplified version of the game, `[Ace]` is worth 11 points.
@@ -46,12 +47,13 @@ When the game ends, be sure to print the result *Blackjack*, *Bust*, *Win*, *Los
 #### TLDR Simplified rules
 
 Normal blackjack rules, except aces are always worth 11 points.
+See Sample Run below.
 
 ### PART B Required Methods
 
 1. `public Blackjack()`: This should instantiate any instance variables you have, especially your `Deck`.
-2. `public void play(Scanner scanner)`: The method to be called to actually play a game. This is where you implement the flow of the **Gameplay**. The output should clearly communicate what is happening - cards dealt, comparisons made, etc. 
-3. `public static int calcPoints(Card[] hand)`: This helper method takes an array of `Card`s and returns the amount of points that hand is worth. Postcondition: the parameter should remain unaltered.
+2. `public void play(Scanner scanner)`: The method to be called to actually play a game. This is where you implement the flow of the **Gameplay**. The output should clearly communicate what is happening - cards dealt, comparisons made, etc.
+3. `public static int calcPoints(Card[] hand)`: This helper method takes an array of `Card`s and returns the amount of points that hand is worth. Post condition: the parameter should remain unaltered.
 4. `public static String determineResult(Card[] userHand, Card[] dealerHand)`: Returns a `String` in one of the following formats: `"User Wins"`, `"User Loses"`, or `"User Pushes"`. Does not alter parameters.
 5. `public static boolean isBust(Card[] hand)`: returns `true` if the hand is a *Bust*, `false` otherwise. Does not alter parameters.
 6. `public static boolean isBlackjack(Card[] hand)`: returns `true` if the hand is a *Blackjack*, `false` otherwise. Remember, it is only a blackjack in the opening hand (2 card hand). Does not alter parameters.
@@ -62,8 +64,11 @@ You may include any other `private` methods and instance variables you think app
 ### Part B Other Requirements
 
 * **User experience (UX) must be very clear.** You might, for the sake of clarity, have extra pauses in gameplay so the player does not get lost.
+  * Must print the outcome of the game: Blackjack, Win, Lose, or Push
+  * Regularly print the state of the user hand, the state of the dealer hand, and the state of the deck.
 * **Your game should account for bad input.** Bad input should not break the game.
 * **Finish your main method** Make a Scanner, and call `Blackjack`'s `play` method with it.
+* **Must not shuffle the deck between games.** Only shuffle when we would deal a card when the deck is empty. 
 
 ### PART B Sample Run
 
@@ -112,13 +117,13 @@ Would you like to play again? (Y)es/(N)o: no
 Thanks for playing MrHsieh! Have a great day!
 ```
 
-## GRADING BREAKDOWN
+## Grading Breakdown
 
-- Attempted code in all **YOUR CODE HERE** areas: 8 points
-- Correctly JavaDoc'ed all Code: 3 points
-- Has no `public` members other than those specified: 2 points
-- Passed all Test Cases: 10 points
-- Blackjack functionality: 5 points
-- UX: 2 points
+* Attempted code in all **YOUR CODE HERE** areas: 8 points
+* Correctly JavaDoc'ed all Code: 3 points
+* Has no `public` members other than those specified: 2 points
+* Passed all Test Cases: 10 points
+* Blackjack functionality: 5 points
+* UX: 2 points
 Total: 30 points
   
