@@ -68,7 +68,7 @@ You may include any other `private` methods and instance variables you think app
   * Regularly print the state of the user hand, the state of the dealer hand, and the state of the deck.
 * **Your game should account for bad input.** Bad input should not break the game.
 * **Finish your main method** Make a Scanner, and call `Blackjack`'s `play` method with it.
-* **Must not shuffle the deck between games.** Only shuffle when we would deal a card when the deck is empty. 
+* **Must not shuffle the deck between games.** Only shuffle when we would deal a card when the deck is empty.
 
 ### PART B Sample Run
 
