@@ -2,7 +2,12 @@
 
 For this project, using the given `Card` class, you will write the `Deck` class. Then, you will write the `Blackjack` class, which has all the functionality to play a simplified version of the game.
 
-## PART A - `Deck.java`
+## PART A - `PalindromeTester.java`
+
+You must create the `isPalindrome(String s)` in `PalindromeTester.java`.
+See the documentation & tests for the method for more information.
+
+## PART B - `Deck.java`
 
 A `Card` class has been provided for you in this project. (Read the file - it has many useful attributes & methods)
 You will use the `Card`s to create a `Deck`.
@@ -11,7 +16,7 @@ The potential values are `[2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace]` 
 
 Your `Deck` class must include the following:
 
-### PART A Required Methods
+### PART B Required Methods
 
 1. `public Deck()`: Default constructor. Creates 52 unique `Card`s
 2. `public int numLeft()`: Returns how many cards have not been dealt in the `Deck`
@@ -20,9 +25,9 @@ Your `Deck` class must include the following:
 
 You may include any other `private` methods and instance variables you think applicable. You should have nothing else that is `public` other than what is listed above.
 
-## PART B - `Blackjack.java`
+## PART C - `Blackjack.java`
 
-For **Part B** you are going to use your newly made `Deck` to create a basic version of the game `Blackjack`.
+For **Part C** you are going to use your newly made `Deck` to create a basic version of the game `Blackjack`.
 
 ### Simplified Blackjack Gameplay
 
@@ -49,7 +54,7 @@ When the game ends, be sure to print the result *Blackjack*, *Bust*, *Win*, *Los
 Normal blackjack rules, except aces are always worth 11 points.
 See Sample Run below.
 
-### PART B Required Methods
+### PART C Required Methods
 
 1. `public Blackjack()`: This should instantiate any instance variables you have, especially your `Deck`.
 2. `public void play(Scanner scanner)`: The method to be called to actually play a game. This is where you implement the flow of the **Gameplay**. The output should clearly communicate what is happening - cards dealt, comparisons made, etc.
@@ -61,7 +66,7 @@ See Sample Run below.
 
 You may include any other `private` methods and instance variables you think applicable. You should have nothing else that is `public` other than what is listed above.
 
-### Part B Other Requirements
+### Part C Other Requirements
 
 * **User experience (UX) must be very clear.** You might, for the sake of clarity, have extra pauses in gameplay so the player does not get lost.
   * Must print the outcome of the game: Blackjack, Win, Lose, or Push
@@ -119,11 +124,14 @@ Thanks for playing MrHsieh! Have a great day!
 
 ## Grading Breakdown
 
-* Attempted code in all **YOUR CODE HERE** areas: 8 points
+* Tried hard: 3 points
+* Proper formatting/indentation: 3 points
 * Correctly JavaDoc'ed all Code: 3 points
-* Has no `public` members other than those specified: 2 points
-* Passed all Test Cases: 10 points
-* Blackjack functionality: 5 points
-* UX: 2 points
+* Has no `public` members other than those specified: 3 points
+* Pass all PalindromeTester test cases: 3 pts
+* Pass all Deck test cases: 3 pts
+* Pass all Blackjack test cases: 3 pts
+* Blackjack functionality: 6 points
+* UX: 3 points
 Total: 30 points
   
