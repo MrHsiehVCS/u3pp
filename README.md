@@ -135,3 +135,10 @@ Thanks for playing MrHsieh! Have a great day!
 * UX: 3 points
 Total: 30 points
   
+## How to run automated tests
+
+1. In VSCode (or your IDE of choice), open a terminal (Terminal -> new Terminal)
+2. type in `mvn package` and press enter
+3. green means successful tests, and red means failed tests
+   1. a green `BUILD SUCCESS` means you've passed all tests. 
+   2. Failed tests will tell you exactly which tests you failed. Hopefully, the test function names are descriptive enough to give you a general idea of what the error is. If not, you can always examine the test code to see what failed. If you are completely lost, ask Mr. Hsieh :)
