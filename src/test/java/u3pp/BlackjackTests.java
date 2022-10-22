@@ -96,8 +96,10 @@ public class BlackjackTests {
     void testDetermineResult() throws Exception {
 
         assertAll("Correctly determines the comparison of two hands",
+                () -> assertEquals("User Loses", Blackjack.determineResult(hand4, hand2)),
                 () -> assertEquals("User Loses", Blackjack.determineResult(hand1, hand2)),
                 () -> assertEquals("User Loses", Blackjack.determineResult(hand6, hand7)),
+                () -> assertEquals("User Wins", Blackjack.determineResult(hand2, hand4)),
                 () -> assertEquals("User Wins", Blackjack.determineResult(hand2, hand7)),
                 () -> assertEquals("User Wins", Blackjack.determineResult(hand7, hand6)),
                 () -> assertEquals("User Pushes", Blackjack.determineResult(hand2, hand2)),
