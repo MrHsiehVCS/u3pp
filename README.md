@@ -21,7 +21,7 @@ Your `Deck` class must include the following:
 1. `public Deck()`: Default constructor. Creates 52 unique `Card`s
 2. `public int numLeft()`: Returns how many cards have not been dealt in the `Deck`
 3. `public Card deal()`: Takes a card off the "top" of the `Deck` and returns it.
-4. `public void shuffle()`: Restores the `Deck` to "full" and randomizes the order of the `Card`s to be dealt
+4. `public void shuffle()`: Restores the `Deck` to "full" and randomizes the order of the `Card`s to be dealt. If you want a simple shuffle algorithm, google 'Fischer-Yates shuffle'.
 
 You may include any other `private` methods and instance variables you think applicable. You should have nothing else that is `public` other than what is listed above.
 
