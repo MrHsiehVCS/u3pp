@@ -33,7 +33,7 @@ For **Part C** you are going to use your newly made `Deck` to create a basic ver
 
 Skip to the TLDR if you already know how blackjack works.
 
-### Full Explanation
+### Full Explanation of Blackjack
 
 The goal of the game is to get as close as possible to 21 points without going over. `[2-10]` are worth their face value as points, `[Jack, Queen, King]` are worth 10 points. In our simplified version of the game, `[Ace]` is worth 11 points.
 
