@@ -75,7 +75,7 @@ You may include any other `private` methods and instance variables you think app
 * **Finish your main method** Make a Scanner, and call `Blackjack`'s `play` method with it.
 * **Must not shuffle the deck between games.** Only shuffle when we would deal a card when the deck is empty.
 
-### PART B Sample Run
+### PART C Sample Run
 
 *Note:* Wording does not have to match the given example exactly (have some fun with it!) but it should go through the same general flow, and account for upper/lowercase, and also for invalid input. Gameplay will be manually graded by Mr. Hsieh. He will try his best to break your game. :)
 
